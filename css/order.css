@@ -1,0 +1,165 @@
+:root {
+  --background-color: #f7f7f7;
+  --highlight-color: #9c1515d8;
+  --box-shadow: rgba(0, 0, 0, 0.128);
+  --red-transparent: rgba(250, 0, 0, 0.087);
+  --green: rgba(1, 72, 32, 0.84);
+  --green-transparent: rgba(0, 250, 108, 0.087);
+}
+
+.order {
+  display: none;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+ 
+}
+
+
+.order__img {
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  transition: all 1s;
+}
+.order__img:hover{
+transform: scale(1.5);
+}
+
+
+.chat {
+  position: absolute;
+  background-color: var(--background-color);
+  right: 1rem;
+  bottom: 4rem;
+  border: .1rem solid var(--red-transparent);
+  box-shadow: 0 .5rem 1rem var(--box-shadow);
+  width: 250px;
+  height: 425px;
+  opacity: 0;
+  right: -500%;
+  border-radius: 0.25rem;
+  padding: 0;
+  transform: translateX(-300px);
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.chatanimacion{
+  animation-name: chat;
+}
+
+.chat__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  text-decoration: none;
+  color: var(--highlight-color);
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 0 auto;
+  transition: transform 0.7s;
+}
+
+.chat__close:hover {
+  transform: rotate(180deg);
+}
+
+.chat__main {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+.chat__items {
+  overflow-x: hidden;
+  height: 350px;
+}
+
+.chat__container-item {
+  display: flex;
+}
+
+.chat__container-item--user {
+  justify-content: end;
+}
+
+.chat__item {
+  background-color: var(--red-transparent);
+  border-radius: 0.7rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 0.25rem 0.5rem;
+  padding: 0.1rem 0.6rem 0.15rem;
+  color: var(--footer-color);
+  border: 0.01rem solid var(--footer-color);
+}
+
+.chat__item--user {
+  background-color: rgba(0, 250, 108, 0.087);
+  color: var(--green);
+  border: 0.01rem solid var(--green);
+}
+
+.chat__order {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.2rem;
+}
+
+.chat__input {
+  width: 100%;
+  height: 28px;
+  border: none;
+  background-color: rgba(0, 250, 108, 0.087);
+  color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 0.2rem;
+  outline: 0;
+  font-weight: 600;
+  padding: 0 0.25rem;
+}
+
+.chat__button {
+  display: inline-block;
+  margin: 0;
+  background-color: transparent;
+  color: var(--);
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  width: 100px;
+  font-weight: 600;
+  border: 0.01rem solid var(--green);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.chat__button:hover {
+  color: var(--background-color);
+  background-color: var(--green);
+}
+
+/* !!!!!!Faltan animaciones para mostrar y ocultar el chat de pedidos!!!!!!
+
+
+
+/* Para la barra de desplazamiento 
+https://elcssar.com/css/webkit-scrollbar */
+.chat__items::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.chat__items::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+.chat__items::-webkit-scrollbar-thumb {
+  background-color: var(--red-transparent);
+  border-radius: 0.25rem;
+}

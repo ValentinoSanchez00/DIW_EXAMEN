@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DAW Burguer</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/home-img.png" type="image/x-icon" />
+
+  <!-- Fuente Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,900;0,1000;1,600;1,700;1,900;1,1000&display=swap"
+    rel="stylesheet" />
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/menus.css" />
+  <link rel="stylesheet" href="./css/order.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+
+<body class="fondo">
+
+  <!-- ----------------- Chat Pedidos ------------------------------ -->
+  <!-- Pedidos -->
+  <section class="order order__scroll">
+    <!-- Chat Pedidos -->
+    <section class="chat" id="chat">
+      <a href="#" class="chat__close" id="chat_close">X</a>
+      <section class="chat__main">
+        <div class="chat__items" id="chat_items">
+          <div class="chat__container-item">
+            <span class="chat__item">Hola, ¿en qué puedo ayudarte? </span>
+          </div>
+          <!-- Aquí añadimos los nuevos chats que tienen la misma estructura que el anterior div-->
+        </div>
+        <div class="chat__order" id="chat_order">
+          <input type="text" class="chat__input" id="chat_input" />
+          <button class="chat__button" id="chat_button">Pedir</button>
+        </div>
+      </section>
+    </section>
+    <img class="order__img" id="orderimg" src="./assets/images/s-1.png" alt="" />
+  </section>
+  <!-- Fin Chat Pedidos -->
+
+  <!-- ----------------- PÁGINA PRINCIPAL --------------------------------- -->
+
+
+  <!-- Main -->
+  <main class="container">
+    <!-- Header  -->
+    <header class="header">
+      <!-- Evita el 100% del header y permite responsive -->
+      <div class="header__container">
+        <!-- Logo -->
+        <a href="#" class="header__link"><i class="header__logo fas fa-utensils"></i> Daw
+          <span class="header__text">Burger</span>
+        </a>
+
+        <!-- nav hamburguesa -->
+        <div class="fas fa-bars navburgerbutton" id="nav_burguerbutton">
+        </div>
+
+        <!-- nav -->
+        <nav class="nav" id="nav">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a class="nav__link" href="#home">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#speciality">Populares</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#gallery">Galería</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#review">Opiniones</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#footer">Nosotros</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+
+    <!-- Fin del Header -->
+    <!-- Home  -->
+    <section class="home" id="home">
+      <div class="home__content">
+        <h1 class="home__title">Pasión y dedicación!!!</h1>
+        <p class="home__text">
+          Te invitamos a descubrir un mundo de sabores, donde cada hamburguesa
+          es una creación única, hecha especialmente para ti. Descubre el
+          sabor auténtico de nuestras carnes de primera calidad... Te
+          sorprenderán!!!.
+        </p>
+        <div class="home__container-btn">
+          <button class="home__btn" id="home_btn">Pedidos</button>
+        </div>
+      </div>
+
+      <div class="home__image-container">
+        <img class="home__img" src="./assets/images/home-img.png" alt="burguer" />
+      </div>
+    </section>
+    <!-- Fin del Home -->
+
+    <!-- Especialidades -->
+    <section class="specialitiescontainer" id="speciality">
+      <h2 class="specialitiescontainer__title">
+        Nuestras
+        <span class="specialitiescontainer__title-color">Especialidades</span>
+      </h2>
+      <section class="specialties">
+        <article class="speciality ">
+          <img class="speciality__main-img" src="./assets/images/s-img-2.jpg" alt="" />
+          <main class="speciality__content">
+            <img class="speciality__img" src="./assets/images/s-2.png" alt="" />
+            <h3 class="speciality__title">Pizzas</h3>
+            <p class="speciality__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda inventore neque amet ipsa tenetur voluptates aperiam
+              tempore libero labore aut.
+            </p>
+          </main>
+        </article>
+
+        <article class="speciality">
+          <img class="speciality__main-img" src="./assets/images/s-img-3.jpg" alt="" />
+          <main class="speciality__content">
+            <img class="speciality__img" src="./assets/images/s-3.png" alt="" />
+            <h3 class="speciality__title">Helados</h3>
+            <p class="speciality__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda inventore neque amet ipsa tenetur voluptates aperiam
+              tempore libero labore aut.
+            </p>
+          </main>
+        </article>
+
+        <article class="speciality">
+          <img class="speciality__main-img" src="./assets/images/s-img-4.jpg" alt="" />
+          <main class="speciality__content">
+            <img class="speciality__img" src="./assets/images/s-4.png" alt="" />
+            <h3 class="speciality__title">Cocteles</h3>
+            <p class="speciality__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda inventore neque amet ipsa tenetur voluptates aperiam
+              tempore libero labore aut.
+            </p>
+          </main>
+        </article>
+
+        <article class="speciality">
+          <img class="speciality__main-img" src="./assets/images/s-img-5.jpg" alt="" />
+          <main class="speciality__content">
+            <img class="speciality__img" src="./assets/images/s-5.png" alt="" />
+            <h3 class="speciality__title">Pastelería</h3>
+            <p class="speciality__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda inventore neque amet ipsa tenetur voluptates aperiam
+              tempore libero labore aut.
+            </p>
+          </main>
+        </article>
+
+        <article class="speciality">
+          <img class="speciality__main-img" src="./assets/images/s-img-6.jpg" alt="" />
+          <main class="speciality__content">
+            <img class="speciality__img" src="./assets/images/s-6.png" alt="" />
+            <h3 class="speciality__title">Desayunos</h3>
+            <p class="speciality__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda inventore neque amet ipsa tenetur voluptates aperiam
+              tempore libero labore aut.
+            </p>
+          </main>
+        </article>
+      </section>
+    </section>
+    <!-- Fin Especialidades-->
+
+    <!-- Galería -->
+    <section class="foodgallery" id="gallery">
+      <h2 class="foodgallery__title">Platos<span class="foodgallery__title-color">Favoritos</span></h2>
+
+      <section class="foods">
+        <div class="food">
+          <img class="food__img" src="./assets/images/g-1.jpg" alt="" />
+        </div>
+
+        <div class="food">
+          <img class="food__img" src="./assets/images/g-2.jpg" alt="" />
+        </div>
+
+        <div class="food">
+          <img class="food__img" src="./assets/images/g-3.jpg" alt="" />
+        </div>
+
+        <div class="food">
+          <img class="food__img" src="./assets/images/g-4.jpg" alt="" />
+        </div>
+
+        <div class="food">
+          <img class="food__img" src="./assets/images/g-5.jpg" alt="" />
+        </div>
+
+        <div class="food">
+          <img class="food__img" src="./assets/images/g-6.jpg" alt="" />
+        </div>
+
+        <div class="food">
+          <img class="food__img" src="./assets/images/g-7.jpg" alt="" />
+        </div>
+
+        <div class="food">
+          <img class="food__img" src="./assets/images/g-8.jpg" alt="" />
+        </div>
+
+        <div class="food">
+          <img class="food__img" src="./assets/images/g-9.jpg" alt="" />
+        </div>
+
+      </section>
+    </section>
+    <!-- Fin Galería -->
+
+  </main>
+
+
+  <!-- Footer  -->
+  <footer class="footer" id="footer">
+    <section class="footer__social">
+      <a href="#" class="footer__btn">Facebook</a>
+      <a href="#" class="footer__btn">Twitter</a>
+      <a href="#" class="footer__btn">Instagram</a>
+      <a href="#" class="footer__btn">Pinterest</a>
+      <a href="#" class="footer__btn">Linkedin</a>
+    </section>
+    <p class="footer__text">
+      DAW Burguer &nbsp;<span class="footer__text-ies">
+        IES Ribera del Tajo
+      </span>
+    </p>
+  </footer>
+  <!-- Fin Footer -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

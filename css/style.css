@@ -1,0 +1,220 @@
+.fondo{
+  background-image: url(../assets/images/home-bg.jpg);
+}
+.container{
+  display: grid;
+  min-width: 480px;
+  max-width: 1330px;
+  width: 100%;
+ 
+  grid-template-areas: "header""home""especialidades";
+  margin: 0 auto;
+}
+.specialitiescontainer{
+  grid-area: especialidades;
+}
+.header{
+  grid-area: header;
+}
+.home{
+  grid-area: home;
+}
+.footer{
+  grid-area: footer;
+}
+.foodgallery{
+  grid-area: galeria;
+}
+
+:root {
+  --color-white: #fff;
+  --background-color: #e2e2e2;
+  --text-color: #666;
+  --highlight-color: #9c1515d8;
+  --footer-color: #ff3838;
+  --background-footer: #000000ea;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background-color);
+}
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+ 
+}
+.header__logo,.header__text{
+color: #ff3838;
+}
+.header__link{
+  text-decoration: none;
+  color: gray;
+  font-size: 2rem;
+}
+.home__title{
+  margin-top: 1rem;
+  color: #ff3838;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.home__text{
+  font-size: 2rem;
+  color: #666;
+}
+.home__btn{
+  display: none;
+}
+.home__image-container{
+  display: none;
+}
+.specialitiescontainer__title{
+  font-size: 2.5rem;
+  text-align: center;
+  color: #666;
+}
+.specialitiescontainer__title-color{
+color: #ff3838;
+}
+.speciality__main-img{
+  display: none;
+}
+.speciality__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 3rem auto;
+  padding: 1rem;
+  border: 1px solid black;
+
+}
+.speciality__img{
+  
+}
+.foodgallery{
+  display: none;
+}
+
+/* Header */
+/* La animación de botón hay que hay que hacer con after o before */
+
+/* Especialidades */
+/* Hay que maquetar esta sección con flex y la parte de responsive también debe funcionar con flex */
+
+/* Galería */
+.foods {
+  /* Hay que maquetar esta sección con flex y la parte de responsive también debe funcionar con flex */
+  gap: 1.5rem;
+}
+.foods{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.food {
+  /* Hay que maquetar esta sección con flex y la parte de responsive también debe funcionar con flex */
+  
+  height: 200px;
+  border: 1rem solid var(--color-white);
+  box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+}
+
+.food__img {
+  height: 100%;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  
+}
+
+/* Footer */
+
+.footer {
+  padding: 1rem 0;
+  background: var(--background-footer);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.footer__social {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer__btn {
+  position: relative;
+  display: inline-block;
+  width: 115px;
+  padding: 0.25rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: .25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  z-index: 0;
+  border: 1px solid var(--footer-color);
+  color: var(--footer-color);
+  font-weight: 600;
+  overflow: hidden;
+}
+.footer__btn::after{
+  position: absolute;
+  content:"";
+  top: 100px;
+  right: 0;
+  width: 200px;
+  height: 80px;
+  background-color: #ff3838; 
+  transition: all 1s;
+  z-index: 0;
+}
+.footer__btn:hover{
+  color: #666;
+}
+
+.footer__btn:hover::after{
+ transform: translatey(-100px);
+ 
+}
+
+
+
+
+.footer__text {
+  color: var(--footer-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer__text-ies {
+  color: var(--background-color);
+  font-weight: 600;
+}
+
+
+
+.specialties{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.speciality{
+  flex-basis: 1;
+  flex-shrink: 1;
+}
+
